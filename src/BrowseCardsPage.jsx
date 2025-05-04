@@ -7,6 +7,8 @@ import Mycard from './componenet/mycard';
 import Genereatecard from './componenet/genereatecard';
 import Calender from './componenet/calender';
 import Subplan from './componenet/subplan';
+import Contact from './componenet/Contact';
+
 
 function BrowseCardsPage() {
   const [selected, setSelected] = useState("My Cards");
@@ -14,9 +16,17 @@ function BrowseCardsPage() {
   const renderContent = () => {
     switch (selected) {
       case "My Cards":
-        return <div>< Mycard/></div>;
+        return <div>
+          < Mycard/>
+          <Contact/>
+        
+        </div>;
+             
       case "Generate Cards":
-        return <div><Genereatecard/></div>;
+        return <div>
+          <Genereatecard/>
+          <Contact/>
+        </div>;
       case "Calendar":
         return <div><Calender/></div>;
       case "Subs Plan":
