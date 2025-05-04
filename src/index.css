@@ -1,0 +1,23 @@
+@import "tailwindcss";
+.bg{
+    background-image: url(../public/Images/landing-main.webp);
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+.bg::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(11, 10, 10, 0.7);
+}
+
